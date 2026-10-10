@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Liquid Fortune</title>
+    <title>ФОРТУНА ОТ NIFY</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Audiowide&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,35 +18,38 @@
         <div class="topbar">
           <div class="brand">
             <span class="brand-mark">✦</span>
-            <span>LIQUID FORTUNE</span>
+            <span>ФОРТУНА ОТ NIFY</span>
           </div>
         </div>
 
         <section class="oracle">
           <div class="field-wrap">
-            <label for="question">Задай свой вопрос</label>
+            <label for="question">пиздани как сократ</label>
             <input
               id="question"
               type="text"
-              placeholder="Например: судить мне сегодня..."
-              maxlength="80"
+              placeholder="Что тебя ждёт..."
+              maxlength="100"
             />
           </div>
 
-          <button id="askBtn" class="ask-btn">Спросить</button>
+          <button id="askBtn" class="ask-btn">ГАДАЙ</button>
         </section>
 
         <section class="playground">
           <div class="lane">
             <div class="lane-track"></div>
-            <div class="ball" id="ball">
-              <span>67</span>
+            <div class="ball-container" id="ballContainer">
+              <div class="ball" id="ball">
+                <div class="ball-stripes"></div>
+                <span class="ball-number">67</span>
+              </div>
             </div>
             <div class="finish-line"></div>
           </div>
 
           <div class="result-box" id="resultBox">
-            <div class="result-label">Предсказание</div>
+            <div class="result-label">ТВОЯ СУДЬБА</div>
             <div class="result-text" id="resultText">50/50</div>
           </div>
         </section>
