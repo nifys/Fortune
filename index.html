@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liquid Fortune</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="backdrop-glow glow-1"></div>
+    <div class="backdrop-glow glow-2"></div>
+
+    <main class="app">
+      <div class="panel">
+        <div class="topbar">
+          <div class="brand">
+            <span class="brand-mark">✦</span>
+            <span>LIQUID FORTUNE</span>
+          </div>
+        </div>
+
+        <section class="oracle">
+          <div class="field-wrap">
+            <label for="question">Задай свой вопрос</label>
+            <input
+              id="question"
+              type="text"
+              placeholder="Например: судить мне сегодня..."
+              maxlength="80"
+            />
+          </div>
+
+          <button id="askBtn" class="ask-btn">Спросить</button>
+        </section>
+
+        <section class="playground">
+          <div class="lane">
+            <div class="lane-track"></div>
+            <div class="ball" id="ball">
+              <span>67</span>
+            </div>
+            <div class="finish-line"></div>
+          </div>
+
+          <div class="result-box" id="resultBox">
+            <div class="result-label">Предсказание</div>
+            <div class="result-text" id="resultText">50/50</div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
